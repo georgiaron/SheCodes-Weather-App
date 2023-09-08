@@ -1,0 +1,87 @@
+/* Reset default styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+/* Subheadings */
+
+h2,
+h3 {
+  font-size: 30px;
+  font-weight: normal;
+  color: #5b6275;
+}
+h1 {
+  font-size: 60px;
+  text-align: center;
+  position: relative;
+  top: 10px;
+  color: #5b6275;
+}
+
+/* Main container */
+.container {
+  height: 720px;
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 30px 27px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Search bar and buttons */
+.search-bar,
+.current-location-button {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -123px;
+  right: -482px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.todaysTemperature {
+  text-align: center;
+  font-size: 60px;
+  position: relative;
+  top: 14px;
+}
+.todaysWeather {
+  text-align: center;
+  font-size: 40px;
+}
+
+.weather-details {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.todaysLow,
+.todaysHigh {
+  font-size: 25px;
+  margin-left: 37px;
+  margin-right: 37px;
+}
+
+.icons {
+  margin-right: -756px;
+  font-size: 60px;
+  top: 105px;
+  position: relative;
+}
+
+.days {
+  margin-right: -765px;
+  font-size: 30px;
+  top: 79px;
+  position: relative;
+}
