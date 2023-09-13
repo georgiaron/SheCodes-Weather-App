@@ -1,4 +1,3 @@
-/* Reset default styles */
 body {
   margin: 0;
   padding: 0;
@@ -84,4 +83,10 @@ h1 {
   font-size: 30px;
   top: 79px;
   position: relative;
+}
+
+.openSourceCodeLink {
+  text-align: center;
+  display: block;
+  margin: 20px auto;
 }
