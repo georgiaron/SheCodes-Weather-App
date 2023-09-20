@@ -16,65 +16,65 @@
   </head>
   <body>
     <div class="container">
-      <div class="weatherForecast">
-        <div class="todaysDate">
-          <h2 id="currentTime">4:13pm 3 Aug 2023</h2>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="weatherForecast">
+            <div class="todaysDate">
+              <h2 id="currentTime">4:13pm 3 Aug 2023</h2>
+            </div>
+            <div class="weatherSearch">
+              <form class="search-bar" id="search-form">
+                <input
+                  type="text"
+                  class="round-search-bar"
+                  placeholder="Enter a city"
+                  autocomplete="off"
+                  autofocus="on"
+                  id="search-text-input"
+                />
+                <input class="btn btn-primary" type="submit" value="Search" />
+                <button class="btn btn-primary" id="current-location-button">
+                  Current Location
+                </button>
+              </form>
+            </div>
+            <h1 id="city" class="city-heading">Wellington</h1>
+            <h2 class="todaysTemperature" id="temperature">🌤️ 9&deg;C</h2>
+            <h1 class="todaysWeather">Mostly sunny</h1>
+            <div class="weather-details">
+              <h4 class="todaysLow">L: 3&deg;C</h4>
+              <h4 class="todaysHigh">H: 11&deg;C</h4>
+            </div>
+            <div class="row icons">
+              <div class="col-1"><p>☁️</p></div>
+              <div class="col-1"><p>☁️</p></div>
+              <div class="col-1"><p>🌧️</p></div>
+              <div class="col-1"><p>☁️</p></div>
+              <div class="col-1"><p>🌧️</p></div>
+              <div class="col-1"><p>🌧️</p></div>
+              <div class="col-1"><p>⛅</p></div>
+            </div>
+            <div class="row days">
+              <div class="col-1"><p>Sat</p></div>
+              <div class="col-1"><p>Sun</p></div>
+              <div class="col-1"><p>Mon</p></div>
+              <div class="col-1"><p>Tue</p></div>
+              <div class="col-1"><p>Wed</p></div>
+              <div class="col-1"><p>Thu</p></div>
+              <div class="col-1"><p>Fri</p></div>
+            </div>
+          </div>
         </div>
-        <div class="weatherSearch">
-          <form class="search-bar" id="search-form">
-            <input
-              type="text"
-              class="round-search-bar"
-              placeholder="Enter a city"
-              autocomplete="off"
-              autofocus="on"
-              id="search-text-input"
-            />
-            <input class="btn btn-primary" type="submit" value="Search" />
-            <button class="btn btn-primary" id="current-location-button">
-              Current Location
-            </button>
-          </form>
-        </div>
-        <h1 id="city" class="city-heading">Wellington</h1>
-        <h2 class="todaysTemperature" id="temperature">🌤️ 9&deg;C</h2>
-        <h1 class="todaysWeather">Mostly sunny</h1>
-        <div class="weather-details">
-          <h4 class="todaysLow">L: 3&deg;C</h4>
-          <h4 class="todaysHigh">H: 11&deg;C</h4>
-        </div>
-        <div class="row icons">
-          <div class="col-1"><p>☁️</p></div>
-          <div class="col-1"><p>☁️</p></div>
-          <div class="col-1"><p>🌧️</p></div>
-          <div class="col-1"><p>☁️</p></div>
-          <div class="col-1"><p>🌧️</p></div>
-          <div class="col-1"><p>🌧️</p></div>
-          <div class="col-1"><p>⛅</p></div>
-        </div>
-        <div class="row days">
-          <div class="col-1"><p>Sat</p></div>
-          <div class="col-1"><p>Sun</p></div>
-          <div class="col-1"><p>Mon</p></div>
-          <div class="col-1"><p>Tue</p></div>
-          <div class="col-1"><p>Wed</p></div>
-          <div class="col-1"><p>Thu</p></div>
-          <div class="col-1"><p>Fri</p></div>
-        </div>
-      </div>
-   
-    <footer>
-      <div class="openSourceCodeLink">
-        <a
-          href="https://github.com/georgiaron/SheCodes-Weather-App"
-          target="_blank"
-          >Open-source code</a
+        <small>
+          <a
+            href="https://github.com/georgiaron/Vanilla-Weather-App"
+            target="_blank"
+            >Open source code
+          </a>
+          by Georgia Ronalds</small
         >
-        by Georgia Ronalds
       </div>
-       </div>
-    </footer>
-
+    </div>
     <script src="src/index.mjs"></script>
   </body>
 </html>
