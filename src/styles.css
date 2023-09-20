@@ -2,17 +2,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f0f0f0;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 /* Subheadings */
-
-h2 {
-  font-size: 20px;
-  font-weight: normal;
-  color: #727169;
-  text-align: left;
-  position: relative;
-}
 h1 {
   font-style: normal;
   font-weight: 700;
@@ -22,27 +14,39 @@ h1 {
   color: #272142;
   top: 50px;
 }
-
+h2 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #727169;
+  text-align: left;
+  position: relative;
+}
 form {
   border-bottom: 1px solid rgba(248, 247, 249, 0.9); /* Adjust the last value (0.8) for opacity */
   margin-top: -30px;
   padding-bottom: 30px;
 }
 /* Main container */
-.container {
-  height: 720px;
-  max-width: 960px;
+.weather-app-wrapper {
+  max-width: 900px;
+  margin: 30px auto;
+}
+.weather-app {
+  background: white;
+  max-width: 850px;
   margin: 30px auto;
   padding: 30px 27px;
-  background: white;
+  border: 1px solid #dadde1;
   border-radius: 12px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-}
-
-.weatherForecast {
+  margin-bottom: 10px;
   border-bottom: 2px solid rgba(248, 247, 249, 0.9); /* Adjust the last value (0.8) for opacity */
   padding-bottom: 180px;
 }
+.overview {
+  margin-bottom: 20px;
+}
+
 /* Search bar and buttons */
 .weatherSearch {
   justify-content: center;
