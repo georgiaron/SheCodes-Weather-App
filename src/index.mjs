@@ -34,7 +34,7 @@ function formatDate(date) {
   let amOrPm = currentHour >= 12 ? "PM" : "AM";
   currentHour = currentHour % 12 || 12;
 
-  let formattedDate = `${currentDay} ${currentDate} ${currentMonth} ${currentYear} <br> ${currentHour}:${currentMinute} ${amOrPm}`;
+  let formattedDate = `${currentHour}:${currentMinute} ${amOrPm} ${currentDay} ${currentDate} ${currentMonth} ${currentYear}`;
   return formattedDate;
 }
 let formattedTime = formatDate(currentTime);
