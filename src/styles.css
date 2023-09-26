@@ -12,7 +12,7 @@ h1 {
 }
 /* Form Styles */
 form {
-  border-bottom: 1px solid rgba(248, 247, 249, 0.9); /* Adjust the last value (0.8) for opacity */
+  border-bottom: 1px solid rgba(248, 247, 249, 0.9);
   padding-bottom: 30px;
 }
 /* List Styles */
@@ -25,7 +25,6 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
-
   color: rgb(135, 135, 135);
   font-size: 16px;
   font-weight: 100;
@@ -122,27 +121,19 @@ li::first-letter {
   margin-right: 20px;
 }
 
-/* .icons {
-  margin-right: -620px;
-  font-size: 50px;
-  top: 70px;
-  position: relative;
-  align-items: center;
-} */
-
 /* Temperature and Units Adjustment */
 .weather-temperature {
   display: flex;
   align-items: center;
   margin-right: 20px;
-  margin-left: -35px; /* Add this line */
+  margin-left: -35px;
 }
 
 .weather-temperature img {
   height: 150px;
   width: 150px;
   margin-right: 20px;
-  margin-left: 75px; /* Add this line */
+  margin-left: 75px;
 }
 .weather-temperature .temperature-container {
   margin-top: -200px;
@@ -150,44 +141,33 @@ li::first-letter {
   display: flex;
   align-items: center;
   margin-left: -20px;
-  margin-right: 0; /* Add this line */
+  margin-right: 0;
 }
 .weather-temperature .units {
   margin-top: 30px;
 }
 .units {
-  margin-top: 10px; /* Adjust as needed */
+  margin-top: 10px;
 }
 .units a {
   text-decoration: none;
 }
 /* Forecast styles */
-.WeatherForecast {
-  text-align: center;
-  margin: 40px 0;
-  border-bottom: 1px solid #f9f7fe;
-  padding-bottom: 50px;
-}
-
-/* .days {
-  margin-right: -620px;
-  font-size: 30px;
-  top: 50px;
-  position: relative;
-} */
-
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
   color: #000;
 }
 .weather-forecast-date {
-  font-size: 16px;
-  opacity: 0.5;
+  font-size: 18px;
+  color: #31285b;
+  margin-top: 20px;
+  margin-bottom: -15px;
+  margin-left: 0;
 }
 .weather-forecast-temperature-min {
   opacity: 0.5;
 }
 .weather-forecast-temperatures {
-  font-size: 13px;
+  font-size: 15px;
 }
