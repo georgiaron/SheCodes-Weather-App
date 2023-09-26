@@ -43,7 +43,8 @@ function formatDate(timestamp) {
   return formattedDate;
 }
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
@@ -64,6 +65,13 @@ function displayForecast() {
 
   forecastHTML = forecastHTML + `<div>`;
   forecastElement.innerHTML = forecastHTML;
+}
+
+function getForecast(coordinates) {
+  let apiKey = "76d1eb4ea979408bfoe7f0t31909d45d";
+  let apiURL = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=metric`;
+
+  axios.get(apiURL).then(displayForecast);
 }
 
 function displayTemperature(response) {
@@ -88,6 +96,8 @@ function displayTemperature(response) {
     `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
   );
   iconElement.setAttribute("alt", response.data.condition.description);
+
+  getForecast(response.data.coordinates);
 }
 
 function search(city) {
@@ -131,8 +141,6 @@ let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", displaydisplayCelciusTemperature);
 
 search("Wellington");
-
-displayForecast();
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
